@@ -4,6 +4,7 @@
 #include <ctime>
 using namespace std;
 
+//generates a random number from 1-100 using rand()
 void function_a() {
 	srand((time(NULL)));
 	for (int i = 0; i < 100; i++) {
@@ -12,6 +13,7 @@ void function_a() {
 	}
 }
 
+//generates 100 random numbers from 0-1, otherwise known as a random uniform number 
 void function_b() {
 	cout << fixed << setprecision(2);
 	double min = .25;
@@ -22,6 +24,8 @@ void function_b() {
 	}
 }
 
+//generates 100 random numbers in which 1 is produced with probability of .5, 2 with probability of .2
+//otherwise generates a number between 3-4
 void function_c() {
 	cout << fixed << setprecision(2);
 	double min = 3.0;
